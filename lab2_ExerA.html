@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeCraft 2026 : Hackathon Workshop</title>
+</head>
+<body>
+
+    <header>
+        <h1>CodeCraft 2026</h1>
+        <p>Empower technologies of developers through code, collaboration, and creativity.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About the event</a></li>
+            <li><a href="#schedule">Event schedule</a></li>
+            <li><a href="#register">Registration</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>Join us for an intensive one-day programming workshop designed to upgrade coding skills.</p>
+
+        <article>
+            <h3>Keynote Speaker: Dr. Nurul Nazihah</h3>
+            <p>Pioneeting researcher in artificial intelligence and computational theory.</p>
+        </article>
+
+        <article>
+            <h3>Featured Activity : Hackathon</h3>
+            <p>Form teams, build a prototypes in 4 hours, and win amazing prizes!</p>
+        </article>
+    </section>
+
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>09:00 AM - 01:00 PM>/td>
+                    <td>Registration & Welcome Remarks</td>
+                    <td> rowspan="2">Main Auditorium/td>
+                    <td>Prof. Dr. Mohd Izani Bin Mohd Zain</td>
+                </tr>
+                <tr>
+                    <td>09:00 AM - 10:00 AM>/td>
+                    <td>Keynote Address: Future of AI</td>
+                    <td>Dr. Farah</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM - 11:00 AM>/td>
+                    <td>Web Development Skills</td>
+                    <td>Dr. Arizal</td>
+                <tr>
+                    <td>11:00 AM - 01:00 PM</td>
+                    <td>Hackathon Coding Session</td>
+                    <td>Innovation Hub</td>
+                    <td>Dr. Shukri</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register">
+        <h2>Registration</h2>
+        <form action="register.html" method="post">
+            <!-- Full Name Input -->
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <br>
+
+            <!-- Matric Number Input -->
+            <div>
+                <label for="matric">Matric Number:</label>
+                <input type="text" id="matric" name="matric" required>
+            </div>
+            <br>
+
+            <!-- E-mail Input -->
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+
+            <!-- Radio Buttons for Year of Study (Year 1 - Year 4) sharing the same name -->
+            <div>
+                <label>Year of Study:</label><br>
+                <input type="radio" id="year1" name="year_of_study" value="Year 1">
+                <label for="year1">Year 1</label><br>
+                
+                <input type="radio" id="year2" name="year_of_study" value="Year 2">
+                <label for="year2">Year 2</label><br>
+                
+                <input type="radio" id="year3" name="year_of_study" value="Year 3">
+                <label for="year3">Year 3</label><br>
+                
+                <input type="radio" id="year4" name="year_of_study" value="Year 4">
+                <label for="year4">Year 4</label>
+            </div>
+            <br>
+
+            <!-- Checkboxes for sessions student wants to join (at least 3 choices) -->
+            <div>
+                <label>Select Sessions to Join:</label><br>
+                <input type="checkbox" id="session_keynote" name="sessions" value="Keynote">
+                <label for="session_keynote">Keynote Address</label><br>
+                
+                <input type="checkbox" id="session_masterclass" name="sessions" value="Masterclass">
+                <label for="session_masterclass">Web Development Masterclass</label><br>
+                
+                <input type="checkbox" id="session_hackathon" name="sessions" value="Hackathon">
+                <label for="session_hackathon">Hackathon Coding Session</label>
+            </div>
+            <br>
+
+            <!-- Drop-down list for Programme or Faculty with at least 4 options -->
+            <div>
+                <label for="faculty">Programme / Faculty:</label>
+                <select id="faculty" name="faculty">
+                    <option value="fskm">Faculty of Computer Science and Mathematics</option>
+                    <option value="ftkk">Faculty of Engineering</option>
+                    <option value="fssm">Faculty of Marine Science</option>
+                    <option value="fpeps>Faculty of Business and Economics</option>
+                </select>
+            </div>
+            <br>
+
+            <!-- Submit Button -->
+            <div>
+                <input type="submit" value="Register Now">
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Organiser: Faculty of Computer Science and Mathematics</p>
+        <p>&copy; 2026 CodeCraft Event Committee. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+                    
+                    

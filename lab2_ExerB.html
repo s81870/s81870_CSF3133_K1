@@ -1,0 +1,154 @@
+ <!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+    <meta charset="utf-8"> 
+    <title>Course Feedback</title> 
+ </head> 
+ <body>
+
+ <!--
+    1. Line 10 : Closing tag</head> used instead of <.header>
+    2. Line 20 : Table header row uses <td> for "Rating" instead of <th>
+    3. Line 26 : Opening <tr> tag missing for row 2
+    4. Line 28 : Incorrect colspan="3" int <td> for "Tables and Forms" (makes table structure invalid and misaligned)
+    5. Line 32 : Missing closing tag </td> for "Semantic HTML" before oepning <td 4.0/td>
+    6. Line 39 : Invalid tag structure <td 4.0/td> missing closing angle bracket for start tag (>)
+    7. Line 42 & 44 : Radio buttons have different name attributes (name="good" and name="poor"), allowing multiple selections at the same time instead of grouping them together
+    8. Line 49 : Typo in closing form tag </from> instead of </form>
+    9. Line 52 : Missing semicolon in entity & copy (should be & copy;)
+    -->
+ <header> 
+    <h1>CSF3133 Course Feedback</h1> 
+</head> 
+<nav> 
+    <a href="#results">Results</a> | 
+    <a href="#form">Feedback Form</a>
+    <a href="#comments">Student Comments</a> 
+</nav> 
+
+<section id="results"> 
+    <h2>Feedback Summary</h2> 
+    <table border="1">
+        <thead>
+            <tr> 
+                <th>Week</th> 
+                <th>Topic</th> 
+                <th>Rating</th> 
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>     
+                <td>1</td> 
+                <td>Introduction to HTML</td> 
+                <td>4.5</td>
+            </tr> 
+            <tr> 
+                <td>2</td> 
+                <td>Tables and Forms</td>
+                <td>4.2</td> 
+            </tr> 
+            <tr> 
+                <td>3</td> 
+                <td>Semantic HTML</td>
+                <td>4.0</td> 
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>rowspan="2">Mini Project</td>
+                <td>4.8</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>4.6</td>
+            <tr>
+            
+            <tr>
+                <th colspan="2">Average Rating</th>
+                <td>4.42</td>
+            </tr>
+        </tbody>
+    </table> 
+</section> 
+
+<section id="form"> 
+    <h2>Give Your Feedback</h2> 
+    <form action="submit_feedback.php" method="post">
+        
+        <div>
+            <label for="name">Name:</label> 
+            <input type="text" id="fullname" name="name" required>
+        </div>
+        <br>
+
+        <div>
+                <label for="matric">Matric Number:</label>
+                <input type="text" id="matric" name="matric" required>
+            </div>
+            <br>
+
+            <!-- E-mail Input -->
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+
+            <!-- Radio Buttons for Year of Study (Year 1 - Year 4) sharing the same name -->
+            <div>
+                <label>Year of Study:</label><br>
+                <input type="radio" id="year1" name="year_of_study" value="Year 1">
+                <label for="year1">Year 1</label><br>
+                
+                <input type="radio" id="year2" name="year_of_study" value="Year 2">
+                <label for="year2">Year 2</label><br>
+                
+                <input type="radio" id="year3" name="year_of_study" value="Year 3">
+                <label for="year3">Year 3</label><br>
+                
+                <input type="radio" id="year4" name="year_of_study" value="Year 4">
+                <label for="year4">Year 4</label>
+            </div>
+            <br>
+
+            <!-- Checkboxes for sessions student wants to join (at least 3 choices) -->
+            <div>
+                <label>Select Sessions to Join:</label><br>
+                <input type="checkbox" id="session_keynote" name="sessions" value="Keynote">
+                <label for="session_keynote">Keynote Address</label><br>
+                
+                <input type="checkbox" id="session_masterclass" name="sessions" value="Masterclass">
+                <label for="session_masterclass">Web Development Masterclass</label><br>
+                
+                <input type="checkbox" id="session_hackathon" name="sessions" value="Hackathon">
+                <label for="session_hackathon">Hackathon Coding Session</label>
+            </div>
+            <br>
+
+            <!-- Drop-down list for Programme or Faculty with at least 4 options -->
+            <div>
+                <label for="faculty">Programme / Faculty:</label>
+                <select id="faculty" name="faculty">
+                    <option value="fcsit">Faculty of Computer Science and Information Technology</option>
+                    <option value="fk">Faculty of Engineering</option>
+                    <option value="fbe">Faculty of Built Environment</option>
+                    <option value="fbm">Faculty of Business and Economics</option>
+                </select>
+            </div>
+            <br>
+
+            <!-- Submit Button -->
+            <div>
+                <input type="submit" value="Register Now">
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Organiser: Faculty of Computer Science and Information Technology</p>
+        <p>&copy; 2026 CodeCraft Event Committee. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
