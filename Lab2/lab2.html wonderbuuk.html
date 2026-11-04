@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header, nav, section, article, footer {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li{
+            text-decoration: none;
+            color: #0066cc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td{
+            border: 1px solid #ddd;
+        }
+
+        th, td{
+            padding: 10px;
+            text-align: left;
+        }
+
+        th{
+            background-color: #f2f2f2;
+        }
+
+        .form-group{
+            margin-bottom: 15px;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"]{
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button{
+            background-color: #0066cc;
+            color:white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #004080;
+        }
+    </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>Welcome to My Personal Profile</h1>
+            <p>Exploring HTML tables, forms, and semantic elements.</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a> href="#about">About Me</a></li>
+                <li><a> href="#table-section">Information Table</a></li>
+                <li><a> href="#contact-form">Contact Form</a></li>
+            </ul>
+        </nav>
+
+        <section id="about">
+            <article>
+                <h2>About Me</h2>
+                <p>Hello! I am a student Computer Science.This webpage serves as a demonstration of basic HTML structure, tables, and form handling.</p>
+            </article>
+        </section>
+
+        <section id="table-section">
+            <h2>Personal Information Table</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Details</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                </tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>Alex Smith</td>
+                        <td>Personal</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>22</td>
+                        <td>Personal</td>
+                    </tr>
+                    <tr>
+                        <td>Occupation</td>
+                        <td>Computer Science Student</td>
+                        <td>Professional</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact-form">
+            <h2>Get in Touch</h2>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div> class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" style="display:inline; font-weight:normal;">Male</lable>
+                    
+                    <input type="radio" id="female" name="gender" value="female" style="margin-left: 15px;">
+                    <label for="female" style="display:inline; font-weight:normal;">Female</label>
+
+                     <input type="radio" id="other" name="gender" value="other" style="margin-left: 15px;">
+                     <input type="other" style="display:inline; font-weight:normal;">Other</label>
+                </div>
+
+                <div class="form-group">
+                    <label>Favorite Hobbies:</label>
+                    <input type="checkbox" id="hobby1" name="hobbies" value="coding">
+                    <label for="hobby1" style="display:inline; font-weight:normal;">Coding</label>
+
+                    <input type="checkbox" id="hobby2" name="hobbies" value="reading" style="margin-left: 15px;">
+                    <label for="hobby2" style="display:inline; font-weight:normal;">Reading</label>
+
+                    <input type="checkbox" id="hobby3" name="hobbies" value="gaming" styles="margin-left: 15px;">
+                    <label for="hobby3" style="display:inline; font-weight:normal;">Gaming</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Personal Profile </p>
+        </footer>
+    
+    </body>
+    </html>
+
+            
