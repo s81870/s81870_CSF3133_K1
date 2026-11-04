@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bakery Order : On Campus</title>
+</head>
+<body>
+    <div id="header section">
+        <h1>Welcome to Bakery Campus</h1>
+        <span>Sweet Delicious to you</span>
+    </div>
+
+    <!--Navigation-->
+    <div id="nav">
+        <a href="#">Home</a> | <a href="#">Menu &amp; Pricing</a> | <a href="#">Order Online</a>
+    </div>
+
+    <!--Sidebar-->
+    <div id="sidebar">
+        <h2>Price List</h2>
+        <ul>
+            <li>Cupcake &ndash; RM 3.00 each</li>
+            <!--the character entity reference used to display an en dash-->
+            <li>Cake Slices &dash; RM 5.00 each</li>
+            <li>Mexico Bread &dash; RM 5.00</li>
+            <li>Orders &gt; 10 pieces get free Iced Latte</li>
+            
+        </ul>
+    </div>
+
+    <!--Content Section-->
+    <div id="content">
+        <h2> Welcome to Bakery Campus</h2>
+        <p>
+            Welcome to UMT Campus Bakery<strong>Bakery Order : On Campus</strong>online portal!
+            We offer<em>delicious pastries</em> and custom meats for you.
+            Check out our menu or <a href="#order-form">jump straight to the form</a>below.
+        </p>
+
+        <!--Contact Form-->
+        <div id="order form">
+            <h3>Place Your Order</h3>
+            <form action="submit_order.php" oninput="total.value = (Number(cupcakes.value) * 3) + (Number(cakeslices.value) * 5);">
+
+                <!--Details-->
+                <label for="name">Customer Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="014-92394748" required><br><br>
+
+                <label for="email">E-mail Address:</label><br>
+                <input type="email" id="email" name="email" placeholder=student@umt.edu.my" required><br><br>
+
+                <label for="name">Customer Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus><br><br>
+
+                <!--Pickup-->
+                <label for="pickdate">Pick-up Date:</label><br>
+                <input type="date" id="pickdate" name="pickdate" ><br><br>
+
+                <label for="picktime">Pick-up Time:</label><br>
+                <input type="time" id="picktime" name="picktime" ><br><br>
+
+                <!--Product Selection-->
+                <label for="Flavour">Flavour:</label><br>
+                <input type="text" id="flavour" name="flavour" list="flavourlist" placeholder="Choose or type a flavour"><br>
+                <datalist id="flavourlist">
+                    <option value = "Chocolate Fudge">
+                    <option value = "Red Velvet">
+                    <option value = "Almon London">
+                    <option value = "Vanilla Bean">
+                </datalist><br><br>
+
+                <label for="icing">Icing Colour:</label><br>
+                <input type="color" id="icing" name="icing" value="#ffc0b0"><br><br>
+
+                <label for="sweetness">Sweetness Level (1 = Low, 5 = High):</label><br>
+                <input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1" value="3"><br><br>
+
+                <!--Submit Order-->
+                <strong>Total Price: RM <output name="total" for="cupcakes cakeslices">0</output></strong><br><br>
+
+                <input type="submit" value="Submit Order">
+            </form>
+        </div>
+    </div
+
+    <div id="footer">
+        <p>&copy; 2026 CampusBake&reg; &nbsp;|&nbsp; All Rights Reserved &nbsp;|&nbsp; Quality Baked Goods</p>
+    </div>
+
+</body>
+</html>
