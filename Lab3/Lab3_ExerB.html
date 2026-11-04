@@ -1,0 +1,99 @@
+<!DOCTYPE html><!-- Line 1: <!DOCTYPE> is incomplete (missing 'html').
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+      
+      7. 
+      8. Line 23: <datalist id="movielist"> ID mismatch with input's list attribute (was "movies").
+      9. Line 32: <input type="range"...> has inverted min/max values (min="5" max="1" should be min="1" max="5").
+      10. Line 33: <output name="total" for="adult kid"> has an incorrect 'for' attribute (should be "adult child").
+      11. Line 38: &Copy; uses incorrect capitalization (should be lowercase &copy;).
+    -->
+
+    <!-- Header Section -->
+    <div id="header">
+        <!--Line 9: </span> is misplaced closing a tag that was never opened properly inside <h1>.-->
+        <h1>e-Ticket 
+            <span>Your Campus Cinema</span>
+        </h1>
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="nav">
+        <a href="#">Home</a> | <a href="#">Movies</a> | <a href="#">Contact</a>
+    </div>
+
+    <!-- Content Section -->
+     <!--Line 11: <span id="content"> should be a <div> element for page structure.-->
+    <div id="content">
+        <h2>Book Your Ticket</h2>
+        <!--Line 13: '&amp staff' is missing a semicolon (should be '&amp; symbol as &'). &lt as symbol <-->
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+        
+        <!--Line 14: oninput calculation uses string concatenation (+) instead of number conversion (Number() + Number()).-->
+        <form action="booking.php" oninput="total.value = Number(adult.value) + Number(child.value); price.value = (Number(adult.value) * 12) + (Number(child.value) * 8);">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br>
+
+            Line 18: type="email" has a typo (should be "email").
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="012-3456789" required><br>
+
+            <label for="date">Show date: </label>
+            <input type="date" id="date" name="date"><br>
+
+            <label for="time">Show time: </label>
+            <input type="time" id="time" name="time"><br>
+            
+            <label for="movie">Movie:</label>
+            <!--Line 22: <input id="movie"...> is missing list="movielist" to connect with the datalist.-->
+            <input id="movie" name="movie" list="movielist"><br>
+
+            <!--Line 23: <datalist id="movielist"> ID mismatch with input's list attribute (was "movies").-->
+            <datalist id="movielist">
+                <option value="Kudrat 1968">
+                <option value="Polis Evo 4">
+                <option value="Jumanji">
+            </datalist>
+
+            <label for="adult">Adult tickets:</label>
+            <input type="number" id="adult" name="adult" value="0" min="0"><br>
+
+            <label for="child">Child tickets:</label>
+            <input type="number" id="child" name="child" value="0" min="0"><br>
+
+            <label for="rating">Rate our service: </label>
+            <!--Line 32: <input type="range"...> has inverted min/max values (min="5" max="1" should be min="1" max="5").-->
+            <input type="range" id="rating" name="rating" min="1" max="5"><br>
+
+            <!--Line 33: <output name="total" for="adult kid"> has an incorrect 'for' attribute (should be "adult child").-->
+            Total tickets: <output name="total" for="adult child">0</output><br>
+            Total Price (RM): <output name="price" for="adult child">0</output><br>
+
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div id="sidebar">
+        <h3>Now Showing</h3>
+        <ul>
+            <li><strong>Kudrat 1968</strong> - <span style="color:gray;">PG-13</span> | <a href="#">Trailer</a></li>
+            <li><strong>Polis Evo 4</strong> - <span style="color:gray;">U</span> | <a href="#">Trailer</a></li>
+            <li><strong>Jumanji</strong> - <span style="color:gray;">18</span> | <a href="#">Trailer</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <!--Line 38: &Copy; uses incorrect capitalization (should be lowercase &copy;).-->
+        <p>&copy; 2026 CineKampus. All rights reserved. e-Ticket&reg; - Campus Cinema &lt; RM10 every Tuesday</p>
+    </div>
+</body>
+</html>
