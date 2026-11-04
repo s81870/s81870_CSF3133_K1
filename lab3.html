@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - Interactive Contact Form & Inline Calculator</title>
+</head>
+<body>
+
+    <!--header-->
+    <div id="header section">
+        <h1>Welcome to My Website</h1>
+        <span>Your trusted partner in web solutions</span>
+    </div>
+
+    <!--Content Section-->
+    <div id="content-section">
+
+        <!--Contact Form-->
+        <div id="contact-form-container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <!--Email-->
+                <label for="user-email">Email:</label>
+                <input type="email" id="user-id" name="user_email" required>
+                <br><br>
+
+                <!--Date-->
+                <label for="contact-date">Preferred Contact Date:</label>
+                <input type="date" id="contact-date" name="contact_date">
+                <br><br> <!--to inserts a single line break in text-->
+
+                <!--Range Slider-->
+                <label for="satisfaction">Satisfaction Level (1-10):</label>
+                <input type="range" id="satisfaction" name="satisfaction" min="1" max="10">
+                <br><br>
+
+                <!--Submit-->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <!--Inline Calculator-->
+        <div id="calculator-container">
+            <h2>Inline Calculator</h2>
+            <form oninput"result.value = (parseFloat(num1.value) || 0) + (parseFloat(num2.value) || 0)">
+                <!--Number input1-->
+                <label for="num1">Number 1:</label>
+                <input type="number" id="num1" name="num1" value="0">
+
+                +
+
+                <!--Number input2-->
+                <label for="num2">Number 2:</label>
+                <input type="number" id="num2" name="num2" value="0">
+
+                =
+
+                <!--Dynamic Output-->
+                <output name="result" for="num1 num2">0</output>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer-section">
+        <footer>
+            <p>Contact Us: code@gmail.com | Phone: +6094586725</p>
+            <p>&copy; 2026 All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
