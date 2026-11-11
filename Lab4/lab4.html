@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<HTML LANG = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4 - Responsive Webpage</title>
+
+    <style>
+        .highlight-banner {
+            background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+            border-left: 5px solid #0284c7;
+            padding: 1rem;
+            margin-botton: 1.5rem;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+</body>
+
+    <header>
+        <h1>Lab Exercise 4 Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="highlight-banner">
+            <p>Welcome! This webpage integrates semantic HTML5 elements and dynamic CSS styling.</p>
+        </div>
+
+        <section id="about">
+            <h2>About This Lab</h2>
+            <article>
+                <h3>Web Development Principles</h3>
+                <p>This exercise builds a functional, structured webpage leveraging semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>
+                    <code>&lt;article&gt;</code>
+                    <code>&lt;footer&gt;</code>
+                </p>
+            </article>
+        </section>
+
+        <section id="media">
+            <h2>3. Insert Media</h2>
+            <p>Embedded video content equipped with proper layout matching and captions:</p>
+            <div class="video-container">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/IqZL0F_2Di0?si=G_WHP_B_vnrh3-hG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>5. Interactive Elements</h2>
+            <p>Please fill out the form below:</p>
+
+            <form action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="name">Name (Text Input):</label>
+                    <input type="text" id="name" name="name" required placeholders="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email (text Input):</label>
+                    <input type="email" id="email" name="email" required placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label>Gender (Radio Buttons):</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male">Male</label>
+                        <label><input type="radio" name="gender" value="female">Female</label>
+                        <label><input type="radio" name="gender" value="other">Other</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Favorite Hobbies (Checkboxes):</label>
+                    <div class="checkbox-group">
+                        <label><input type ="checkbox" name="hobbies" value="coding">Coding</label>
+                        <label><input type ="checkbox" name="hobbies" value="reading">Reading</label>
+                        <label><input type ="checkbox" name="hobbies" value="gaming">Gaming</label>
+                    </div>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lab Exercise 4. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
