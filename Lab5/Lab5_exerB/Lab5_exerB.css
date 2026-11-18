@@ -1,0 +1,124 @@
+/* Global body configuration and font selection */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+}
+
+/* Header styled with a cover background image and white text */
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("paper.gif");
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+/* Heading font styling using Merriweather */
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling and line-height specification */
+p {
+    line-height: 1.6;
+}
+
+/* Navigation bar background setup */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+/* Navigation links layout */
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Navigation link hover state */
+li a:hover {
+    background-color: #111;
+}
+
+/* Active navigation link styling */
+li a.active {
+    background-color: #04AA6D;
+}
+
+/* Main content container bounds */
+main {
+    width: 85%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Table layout and borders */
+#product {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+#product td, #product th {
+    border: 1px solid #ddd;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Table header styling */
+#product th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Alternating row background colors */
+#product tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table row interactive hover effect */
+#product tr:hover {
+    background-color: #ddd;
+}
+
+/* Price alignment classes */
+.price-header {
+    text-align: right !important;
+}
+
+.price-cell {
+    text-align: right;
+}
+
+/* Footer presentation layout */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #555;
+}
