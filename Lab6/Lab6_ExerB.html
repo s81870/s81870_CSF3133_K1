@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Grade Calculator</title>
+
+    <!--CSS section-->
+    <link rel="stylesheet" href="Lab6_ExerB.css" />
+</head>
+<body>
+    <h2>Student Grade Calculator</h2>
+
+    <form name="gradeForm" onsubmit="return checkMark()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br />
+
+        <label for="mark">Mark (0-100):</label>
+        <input type="text" id="mark" name="mark" /><br />
+
+        <button type="submit">Check Grade</button>
+
+        <!--Generate button -->
+        <button type="button" onclick="generateRandomMark()">Random Mark</button>
+    </form>
+
+    <p id="result"></p>
+  <!-- Display timestamp when grade was checked -->
+  <p id="checkedTime"></p>
+
+  <button type="button" onclick="showTable()">Show Grade Table</button>
+  <div id="tableContainer"></div>
+
+  <!-- Link external JS file -->
+  <script src="grade.js"></script>
+</body>
+</html>
