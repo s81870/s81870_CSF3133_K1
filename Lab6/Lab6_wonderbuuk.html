@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Programming Languange Quiz</title>
+    <link rel="stylesheet" href="Lab6_wonderbuuk.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Programming Quiz</h1>
+            <p>Answer each question before time running out</p>
+        </header>
+
+        <section>
+            <p id="timer">Time Left:10s</p>
+            <h2 id="question">Question</h2>
+            <div id="options"></div>
+        </section>
+
+        <section>
+            <p id="feedback"><</p>
+        </section>
+
+        <div>
+            <button id="submit-btn" onclick="checkAnswer()">Submit</button>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <footer>
+            <p id="score">Score: 0</p>
+        </footer>
+    </div>
+
+    <script src="Lab6_wonderbuuk.js"></script>
+</body>
+</html>
